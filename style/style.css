@@ -95,8 +95,8 @@ label.checkbtn i.fa-bars, input.checkbox,i.fa-times{
 input.checkbox{
     display: none;
     position: relative;
-    top: 30px;
-    left: 30px;
+    top: 80px;
+    left: 60px;
 
 }
 /*Navbar One Responsive*/
@@ -180,6 +180,9 @@ input.checkbox{
         background-color: #e19a32; 
         z-index: 15;
         text-align: center;
+        position: relative;
+        top: 35px;
+        left: 25px;
     }
     label.checkbtn i.fa-times{
         font-size:25px;
@@ -194,10 +197,12 @@ input.checkbox{
         background-color: #e19a32; 
         z-index: 15;
         text-align: center;
-       
+        position: relative;
+        top: 35px;
+        left: 25px;
     }
     #check:checked~nav{
-        top: 10px;
+        top: 120px;
     }
     ul.menu.two{
         border: top bottom 2px solid #777777 ;
@@ -361,26 +366,27 @@ p.sum{
     justify-content:space-between;
     align-items: center;
 }
-.image{
+.image img{
     display: flex;
     align-items: center;
     padding: 0;
     justify-content: center;
 }
- img.photo__two{
+.image img{
     position: relative;
-    width: 122px;
-    left: 20px;
+    width: 180px;
+    left: 30px;
 }
 @media(max-width:663px){
     .image img{
         position: relative;
-        left: 20px;
+        left: 40px;
     }
 }
-@media(max-width:598){
+@media(max-width:653px){
     img.photo__two{
         width: 100px;
+        left: 20px;
     }
 }
 /*Catalog*/
@@ -498,7 +504,7 @@ p.catalog__container__mob__text__para{
     }
 }
 .info__category{
-    width:23%;
+    width:25%;
 }
 
 .info__carousel{
@@ -509,6 +515,12 @@ p.catalog__container__mob__text__para{
     display: flex;
     flex-direction: row;
     width: 23%;
+    background: #ffffff;
+}
+.info__sale__photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .title{
     font-size: 22px;
@@ -521,6 +533,8 @@ p.catalog__container__mob__text__para{
     line-height: 39px;
     border-bottom: solid 1px #ededed;
     position: relative;
+    font-weight: 300;
+    
 }
 .info__category ul li a{
     text-decoration: none;
@@ -553,6 +567,7 @@ p.catalog__container__mob__text__para{
     justify-content: space-between;
     background-color: #ffffff;
     padding-right: 10px;
+    font-family: 14px;
 }
 .info__category ul li.category__hidden__list, .info__category ul li.category__last_list{
     border-bottom: 1px solid #ffffff;
@@ -570,7 +585,7 @@ p.catalog__container__mob__text__para{
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    height:438px;
+    height:450px;
 }
 .swiper-button-prev:after, .swiper-button-next:after{
     display: none;
@@ -640,6 +655,7 @@ pp.hi{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
     padding: 30px;
 }
 .info__sale_text p{
@@ -655,12 +671,35 @@ pp.hi{
     font-size: 14;
     color: #faad3d;
 }
+@media(max-width:1155px){
+    .all__carousel{
+    height:510px;
+    }
+ }
+  
+    /*Media for title in main info in category*/
+    @media(max-width:1421px){
+        .info__list{
+        max-width: 100%;
+        margin: 0 auto;
+        }
+ }
+        
+ .top__place{
+     position: relative;
+     top: -2.6rem;
+     background: #E7E6E6;
+     }
+
 @media(max-width:1118px){
     .title{
     font-size: 18px;
     }
     .all__carousel{
     height: 438px;
+    }
+    .info__sale__text_title{
+        font-size: 22px;
     }
     .left p{
     font-size: 23px;
@@ -672,23 +711,83 @@ pp.hi{
     .info__category ul li a p , .left__link_text a, .info__sale_text p, .info__sale__text__link a {
     font-size: 12px;
     }
-    }
-    @media(max-width:1164px){
     .all__carousel{
-    height:438px
-    }
-    }
-    /*Media for title in main info in category*/
-    @media(max-width:1421px){
-    .info__list{
-    max-width: 90%;
-    margin: 0 auto;
-    }
-    }
-    
-    .top__place{
-    position: relative;
-    top: -2.6rem;
-    background: #E7E6E6;
-    
-    }
+        height: 445px;
+        }
+   
+}
+
+@media(max-width:1223px){
+    .all__carousel{
+        height: 469px;
+        } 
+ }
+ @media(max-width:1218px){
+    .all__carousel{
+        height: 450px;
+        } 
+ }
+ @media(max-width:1144px){
+    .all__carousel{
+        height:445px;
+        }
+}
+ @media(max-width:1183px){
+    .all__carousel{
+        height: 450px;
+    } 
+ }
+@media(max-width:1155){
+    .all__carousel{
+        height:445px;
+        }
+}
+@media(max-width:1045px){
+    .all__carousel{
+        height:473px;
+        }
+}
+@media(max-width:1045px){
+    .all__carousel{
+        height:450px;
+        }
+}
+
+ /*Mobile version for "Information with swiper"*/
+ @media(max-width:988px){
+    .all__carousel{
+        height: unset;
+        } 
+     .after__nav_section{
+         position: relative;
+         top: -33.5rem;
+         z-index: 1;
+     }
+     ul.menu.one {
+         z-index: 110;
+     }
+     .info__list{
+         flex-direction:column;
+         margin: 0;
+     }
+     .info__category{
+         display: none;
+     }
+     .info__carousel{
+         width:100%;
+     }
+     .go  {
+         width: 100%;
+     }
+     .catalog__container__mob {
+         width: 95%;
+     }
+     .left {
+         margin-left: 30px;
+     }
+     .info__sale{
+        margin: 2.5% 2.5% 0;
+        width: 95%;
+        align-items: flex-start;
+     }
+ }

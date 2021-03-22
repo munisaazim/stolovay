@@ -30,6 +30,8 @@ function change(){
       /*  a.classList.add("search__content__mob");*/
      document.querySelector(".search__content__mob").style.cssText="display:block;";
      window.onscroll = function(){unsetSticky()};
+     var second = document.querySelector('.swiper-slide');
+     second.style.cssText="width: 100%;";
  }
 }
 function showText() {
@@ -56,3 +58,5 @@ var swiper = new Swiper('.swiper-container', {
   prevEl: '.swiper-button-prev',
   },
  });
+
+
