@@ -457,7 +457,8 @@ photo__cat{
 .catalog__mob{
     background: #f1f1f1;
     position: relative;
-    top: -36rem;
+    top: -37rem;
+
     
 }
 .catalog__container__mob{
@@ -687,7 +688,8 @@ pp.hi{
         
  .top__place{
      position: relative;
-     top: -2.6rem;
+    /* top: -2.6rem;*/
+    /* top: -10.5rem;*/
      background: #E7E6E6;
      }
 
@@ -760,7 +762,7 @@ pp.hi{
         } 
      .after__nav_section{
          position: relative;
-         top: -33.5rem;
+         top: -38rem;
          z-index: 1;
      }
      ul.menu.one {
@@ -790,4 +792,73 @@ pp.hi{
         width: 95%;
         align-items: flex-start;
      }
+ }
+ /*Companies*/
+ .company__container{
+    max-width: 1545px;
+    margin: 0 auto;
+ }
+ .company__list ul{
+     display: flex;  
+     margin-left: 10px;
+     background-color: #ffffff;
+     margin-bottom: 20px;
+ }
+ .company__list__container{
+    display: flex;  
+     width: 50%;
+     align-items: center;
+ }
+ .company__list__container li{
+    display: flex;
+    justify-content: center;
+    width: 36.6%;
+    text-align: center;
+    border-right: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+    height:70px;
+ }
+ 
+ .company__photo{
+     display: flex;
+     height:70px;
+     align-items: center;
+   
+ }
+.company__photo img{
+    height: 30px;
+    max-width: 107.3px;
+}
+.company__link{
+    display: flex;
+    align-items: center;
+}
+.company__text{
+    font-size: 15px;
+    color: #000000;
+
+}
+ /*Companies media*/
+ @media(max-width:988px){
+    .company__container{
+        position: relative;
+        top: -20px;
+    }
+    .company__list ul{
+        margin: 0;
+    }
+    .company__list__container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .company__list__container li{
+        width: 100%;
+        border-bottom: 1px solid #f2f2f2;
+    }
+    .company__photo{
+        display: flex;
+        height:70px;
+        border-bottom: 1px solid #f2f2f2;
+      
+    }
  }
