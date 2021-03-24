@@ -845,6 +845,7 @@ pp.hi{
     .company__container{
         position: relative;
         top: -20px;
+        margin-bottom: 70px;
     }
     .company__list ul{
         margin: 0;
@@ -1003,10 +1004,10 @@ pp.hi{
 }
 
 @media(max-width:1137px){
-    .news__list__secondary__container__title__text h3{
+    .news__list__secondary__container__title__text h3, .news__list__main__title__text h3{
         font-size: 18px;
     }
-    .news__list__secondary__container__text p{
+    .news__list__secondary__container__text p, .news__list__main__parag__text p{
         font-size: 14px;
     }
     .news__list__secondary__container__photo img {
@@ -1015,10 +1016,10 @@ pp.hi{
      }
 }
 @media (max-width: 1118px){
-    .news__list__secondary__container__title__text h3{
+    .news__list__secondary__container__title__text h3,.news__list__main__title__text h3{
         font-size: 15px;
     }
-    .news__list__secondary__container__text p{
+    .news__list__secondary__container__text p, .news__list__main__parag__text p{
         font-size: 12px;
     }
 }
@@ -1112,6 +1113,7 @@ pp.hi{
         padding-bottom: 3px;
     }
     .news_list__secondary__list__all.finish{
+        padding-bottom: 10px;
         border-bottom: 1px solid #212529;
     }
 }
@@ -1173,6 +1175,7 @@ pp.hi{
 }
 .recommend__item__one__photo{
     width: 450px;
+    text-align: center;
 }
 .recommend__item__one__photo img{
     width: 95%;
@@ -1298,7 +1301,7 @@ pp.hi{
 
 @media(max-width:988px){
     .recommend__content {
-        margin-top: 30px;
+        margin-top: 70px;
     }
     .recommend____info__text {
         margin: 0 auto 65px;
@@ -1327,9 +1330,7 @@ pp.hi{
     margin-bottom: 16px;
     margin-top: 16px;
 }
-.recommend__item__one__photo img,.recommend__item__two__photo img, .recommend__item__three__photo img{
-  
-}
+
 .recommend__item__two__photo {
     width: unset;
 }
@@ -1343,5 +1344,114 @@ pp.hi{
     }
     .recommend__item__one__desc p,.recommend__item__two__desc p,.recommend__item__three__desc p{
         font-size: 12px;
+    }
+}
+/*Info*/
+
+.info__container__all{
+    max-width: 1545px;
+    margin: 0 auto;
+    padding-top: 170px;
+  
+}
+
+.info__content__all{
+    display: flex;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.info__left{
+    width: 75%;
+    padding-right: 150px;
+    
+}
+.info__left__top{
+    margin-bottom: 25px;
+}
+.info__left__top__title {
+    margin-bottom: 20px;
+}
+.info__left__top__title h3{
+    font-size: 36px;
+    font-weight: 500;
+}
+.info__left__top__text p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #212529;
+    margin: 0;
+}
+.info__left__bottom__title{
+    margin-bottom: 25px;
+}
+.info__left__bottom__title h3{
+    font-weight: 300;
+    font-size: 36px;
+}
+.info__left__bottom__text ul li{
+    font-weight: 300;
+}
+.info__left__top__more{
+    width: 45px;
+    height: 45px;
+    background: #383838;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    line-height: 44px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 45px;
+}
+.info__left__top__more a{
+
+    color: #fff;
+}
+.info__logo{
+    margin-bottom: 25px;
+}
+.info__logo__text  h3{
+    margin-bottom: 0;
+    font-size: 40px;
+    font-weight: 400;
+}
+.info__logo__desc p{
+    color: #898989;
+    font-size: 14px;
+}
+.info__group {
+    margin-bottom: 25px;
+}
+.info__group__text h2{
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 22px;
+}
+.info__group__desc p{
+    color: #898989;
+    font-size: 14px;
+}
+.info__numbers__text {
+    font-weight: 300 ;
+}
+/*Info media*/
+@media(max-width:988px){
+    .info__content__all{
+        flex-direction: column-reverse;
+    }
+    .info__right{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .info__left{
+        width: 93%;
+        padding-top: 100px;
+        padding-right: 0px;
+        margin: 0 auto;
+    }
+    .info__container__all {
+        padding-top: 70px;
     }
 }
