@@ -1455,3 +1455,123 @@ pp.hi{
         padding-top: 70px;
     }
 }
+/*Footer*/
+.footer{
+    background: #282828;
+}
+.footer__container{
+    max-width: 1545px;
+    margin: 0 auto;
+    margin-top: 170px;
+    padding: 90px 0 80px 0;
+  
+}
+.footer__text{
+    display: flex;
+    width: 92%;
+    margin: 0 auto;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+.first__title p i, .second__title p i, .third__footer {
+    display: none;
+}
+.first__title, .second__title, .third__title{
+    display: inline-block;
+    color: #6c6c6c;
+    font-size: 24px;
+    font-weight: 300;
+    padding-bottom: 35px;
+}
+.first__text ul li a, .second__text{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+}
+.second__number{
+    margin-bottom: 15px;
+}
+.second__date{
+    margin-bottom: 17px;
+}
+.second_mail{
+    margin-bottom: 12px;
+}
+@media(max-width:988px){
+    .footer_content{
+        width: 92%;
+        margin: 0 auto;
+    }
+    .first__text, .second__text{
+        display: none;
+    }
+    .footer__text{
+        flex-direction: column;
+    }
+    .first__title p i, .second__title p i, .third__footer{
+        display: block;
+    }
+    .first__title, .second__title, .third__title{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid 2px #4b4b4b;
+    }
+    .first__title, .second__title, .third__title{
+        padding-bottom: 0px;
+        padding-top: 30px;
+    }
+    .first__title p, .second__title p, .third__title p{
+        color: #fff;
+
+    }
+
+}
+/*Footer Last*/
+.footer__last{
+    background: #1f1f1f;
+    
+}
+.footer__last__container{
+    max-width: 1545px;
+    margin: 0 auto;
+    padding: 45px 0;
+}
+.footer_last__content{
+     width: 92%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_last__left{
+    display: flex;
+}
+.footer__last__left__text{
+    color: #fff;
+    margin-left: 10px;
+}
+.footer__last__left__photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__last__left__text h3{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+}
+.footer__last__left__text p{
+    color: #777;
+    font-size: 16px;
+    font-weight: 300;
+}
+.footer__right__text{
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffff;
+}
+@media(max-width:988px){
+.footer_last__content{
+    flex-direction: column;
+}
+}
