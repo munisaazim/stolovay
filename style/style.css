@@ -430,7 +430,7 @@ p.sum{
 
 }
 .catalog__container{
-    max-width: 1545px;
+    max-width: 1920px;
     margin: 0 auto;
     padding: 0 100px;
 }
@@ -491,14 +491,14 @@ p.sum{
     background: #f1f1f1;
     position: relative;
     top: -37rem;
-
-    
+    border-top:1px solid #d4d4d4;
+  
 }
 .catalog__container__mob{
-    max-width: 1545px;
+    max-width: 1920px;
     margin: 0 auto;
     height: 65px;
-    border-bottom: 1px solid #e5e5e5;
+    
     padding: 0 30px;
     display: flex;
     justify-content: space-between;
@@ -518,7 +518,7 @@ p.catalog__container__mob__text__para{
 /*Information with swiper*/
 
 .info__container{
-    max-width: 1545px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 .info__list{
@@ -824,7 +824,7 @@ pp.hi{
  }
  /*Companies*/
  .company__container{
-    max-width: 1545px;
+    max-width: 1920px;
     margin: 0 auto;
     margin-bottom: 170px;
     padding-top: 20px;
@@ -896,7 +896,7 @@ pp.hi{
  }
  /*News*/
  .news__container{
-    max-width: 1545px;
+    max-width: 1920px;
     margin: 0 auto;
  }
  .news__content{
@@ -1008,6 +1008,7 @@ pp.hi{
 }
 .news__list__secondary__container__title__text{
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 .news__list__secondary__container__title__text h3{
     font-size: 22px;
@@ -1115,7 +1116,8 @@ pp.hi{
        
     }
     .news__list__main__photo__content,.news__list__secondary__container{
-        border-top: 1px solid #212529;
+        border-top: 1px solid #b3b3b3;
+        padding: 10px 0px;
     }
     .news__list__secondary{
         width: unset;
@@ -1143,7 +1145,7 @@ pp.hi{
     }
     .news_list__secondary__list__all.finish{
         padding-bottom: 10px;
-        border-bottom: 1px solid #212529;
+        border-bottom:1px solid #b3b3b3;
     }
 }
 @media(max-width:513px){
@@ -1155,7 +1157,7 @@ pp.hi{
 /*Recommendation*/
 
 .recommend__container{
-    max-width: 1545px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 .recommend__content{
@@ -1171,7 +1173,7 @@ pp.hi{
     margin-bottom: 10px;
 }
 .recommend__title h3{
-    font-size: 23px;
+    font-size: 36px;
 }
 .recommend____info__text{
     margin: 0 auto 65px;
@@ -1185,6 +1187,7 @@ pp.hi{
 }
 .recommend____info__text{
     display: flex;
+    text-align: center;
 }
 .recommend__items__content{
     display: flex;
@@ -1378,7 +1381,7 @@ pp.hi{
 /*Info*/
 
 .info__container__all{
-    max-width: 1545px;
+    max-width: 1920px;
     margin: 0 auto;
     padding-top: 170px;
   
@@ -1489,7 +1492,7 @@ pp.hi{
     background: #282828;
 }
 .footer__container{
-    max-width: 1545px;
+    max-width: 1920px;
     margin: 0 auto;
     margin-top: 170px;
     padding: 90px 0 80px 0;
@@ -1561,7 +1564,7 @@ pp.hi{
     
 }
 .footer__last__container{
-    max-width: 1545px;
+    max-width: 1920px;
     margin: 0 auto;
     padding: 45px 0;
 }
