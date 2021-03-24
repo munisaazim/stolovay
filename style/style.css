@@ -9,9 +9,11 @@
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: #F3F2F2;
-}
-.all{
     position: relative;
+}
+.all__navbar{
+    position: relative;
+  /*  top: -2.5rem;*/
 }
 /*Navbar One*/
 .content{
@@ -70,6 +72,7 @@ ul.menu.three{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
   }
   
 .sticky + .content {
@@ -95,9 +98,8 @@ label.checkbtn i.fa-bars, input.checkbox,i.fa-times{
 input.checkbox{
     display: none;
     position: relative;
-    top: 80px;
-    left: 60px;
-
+    top: 75px;
+    left: 50px;
 }
 /*Navbar One Responsive*/
 @media(max-width:1315px){
@@ -112,6 +114,10 @@ input.checkbox{
 }
 
 @media(max-width:988px){
+    .all__navbar{
+        position: relative;
+       top: -2.5rem;
+    }
     nav{
         overflow-y: hidden;
         height: unset;
@@ -120,6 +126,7 @@ input.checkbox{
         background: #ffffff;
         width: 100%;
         height: auto;
+        background: #f1f1f1;
     }
     label.checkbtn i.fa-bars{
         display: block;
@@ -175,7 +182,7 @@ input.checkbox{
         margin-top: 20px;   
         border:2px solid #e19a32;  
         border-radius: 100%;
-        width:5%;
+        width:6%;
         height: 5%;
         background-color: #e19a32; 
         z-index: 15;
@@ -202,7 +209,8 @@ input.checkbox{
         left: 25px;
     }
     #check:checked~nav{
-        top: 120px;
+        top: 99px;
+        height: 100%;
     }
     ul.menu.two{
         border: top bottom 2px solid #777777 ;
@@ -355,6 +363,9 @@ p.sum{
     max-width: 1920px;
     margin: 0 auto;
     width: 82%;
+  /*  margin: 0 0px 0 55px;*/
+    z-index: 1;
+    position: relative;
 }
 .search__container__mob{
     background: none;
@@ -378,16 +389,37 @@ p.sum{
     width: 180px;
     left: 30px;
 }
+.first__icon .fa-phone-alt{
+    color: #34a853;
+}
+.second__icon .fa-search{
+    color: #34a853;
+    color: #faad3d;
+}
+.photo__mob__container img{
+    max-width: 50%;
+    position: relative;
+    left: -5px
+}
 @media(max-width:663px){
     .image img{
         position: relative;
-        left: 40px;
+        /*left: 40px;*/
+        max-width: 100%;
     }
 }
 @media(max-width:653px){
     img.photo__two{
         width: 100px;
         left: 20px;
+    }
+}
+@media(max-width:537px){
+    .search__content__mob{
+      margin: 0 0px 0 55px;
+    }
+    .image img{
+        max-width: 65%;
     }
 }
 /*Catalog*/
@@ -408,7 +440,7 @@ p.sum{
     height: 120px;
     align-items: center;
 }
-photo__cat{
+.photo__cat{
     display: flex;
     justify-content: center;
 }
@@ -484,11 +516,7 @@ p.catalog__container__mob__text__para{
 }
 
 /*Information with swiper*/
-.top__place{
-    position: relative;
-    top: -2.6rem;
-    z-index: -1;
-}
+
 .info__container{
     max-width: 1545px;
     margin: 0 auto;
@@ -688,9 +716,6 @@ pp.hi{
  }
         
  .top__place{
-     position: relative;
-    /* top: -2.6rem;*/
-    /* top: -10.5rem;*/
      background: #E7E6E6;
      }
 
@@ -763,11 +788,14 @@ pp.hi{
         } 
      .after__nav_section{
          position: relative;
-         top: -38rem;
+         top: -40rem;
          z-index: 1;
      }
      ul.menu.one {
          z-index: 110;
+     }
+     ul.menu.one, ul.menu.two, ul.menu.three{
+         background-color: #fff;
      }
      .info__list{
          flex-direction:column;
@@ -799,6 +827,7 @@ pp.hi{
     max-width: 1545px;
     margin: 0 auto;
     margin-bottom: 170px;
+    padding-top: 20px;
  }
  .company__list ul{
      display: flex;  
@@ -844,7 +873,7 @@ pp.hi{
  @media(max-width:988px){
     .company__container{
         position: relative;
-        top: -20px;
+       
         margin-bottom: 70px;
     }
     .company__list ul{
@@ -1544,6 +1573,7 @@ pp.hi{
 }
 .footer_last__left{
     display: flex;
+    
 }
 .footer__last__left__text{
     color: #fff;
@@ -1571,7 +1601,10 @@ pp.hi{
     color: #ffff;
 }
 @media(max-width:988px){
-.footer_last__content{
-    flex-direction: column;
-}
+    .footer_last__content{
+        flex-direction: column;
+    }
+    .footer_last__left{
+        margin-bottom: 10px;
+    }
 }
