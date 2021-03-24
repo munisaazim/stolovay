@@ -9,7 +9,6 @@
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: #F3F2F2;
-    overflow: hidden;
 }
 .all{
     position: relative;
@@ -1123,6 +1122,7 @@ pp.hi{
  
 }
 /*Recommendation*/
+
 .recommend__container{
     max-width: 1545px;
     margin: 0 auto;
@@ -1213,6 +1213,7 @@ pp.hi{
     display: flex;
     flex-direction: row-reverse;
     background-color: #232323;
+    overflow: hidden;
 }
 .recommend__item__two__photo {
     margin-top: 15px;
@@ -1294,7 +1295,7 @@ pp.hi{
     color: #777;
     width: 60%;
 }
-/*Responsive Recommend*/
+
 @media(max-width:988px){
     .recommend__content {
         margin-top: 30px;
@@ -1327,7 +1328,7 @@ pp.hi{
     margin-top: 16px;
 }
 .recommend__item__one__photo img,.recommend__item__two__photo img, .recommend__item__three__photo img{
-    /*max-width: 100%;*/
+  
 }
 .recommend__item__two__photo {
     width: unset;
